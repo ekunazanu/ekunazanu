@@ -1,0 +1,37 @@
+<svg id="AnimLogo" viewBox="-4 -4 114 24" height="480" xmlns="http://www.w3.org/2000/svg">
+<animate id="expand" dur="1.5s" begin="shorten.end+8s" fill="freeze"/>
+<animate id="shorten" dur="1.5s" begin="2s; expand.end+8s" fill="freeze"/>
+<!--
+<animate attributeName="height" dur="1.5s" begin="expand.begin" fill="freeze" calcMode="spline" keySplines="0.5 0 0 1" keyTimes="0; 1" from="192" to="48"/>
+<animate attributeName="height" dur="1.5s" begin="shorten.begin" fill="freeze" calcMode="spline" keySplines="0.5 0 0 1" keyTimes="0; 1" from="48" to="192"/>
+<animate attributeName="viewBox" dur="1.5s" begin="expand.begin" fill="freeze" calcMode="spline" keySplines="0.5 0 0 1" keyTimes="0; 1" from="0 2 12 12" to="0 0 106 16"/>
+<animate attributeName="viewBox" dur="1.5s" begin="shorten.begin" fill="freeze" calcMode="spline" keySplines="0.5 0 0 1" keyTimes="0; 1" from="0 0 106 16" to="-2 2 12 12"/>
+-->
+<animate attributeName="viewBox" dur="1.5s" begin="expand.begin" fill="freeze" calcMode="spline" keySplines="0.5 0 0 1" keyTimes="0; 1" from="-32 0 12 16" to="-4 -4 114 24"/>
+<animate attributeName="viewBox" dur="1.5s" begin="shorten.begin" fill="freeze" calcMode="spline" keySplines="0.5 0 0 1" keyTimes="0; 1" from="-4 -4 114 24" to="-32 0 12 16"/>
+<path id="LongLogoBG" fill="#fff" d="M-64 -4 V20 H138 V-4Z"/>
+<path id="fige1" fill="#000" d="M10 9V7C10 4 8 2 5 2 2 2 0 4 0 7V9H2V8H4V9H6V8H8V9Z">
+<animate attributeName="d" dur="1.5s" begin="expand.begin" fill="freeze" calcMode="spline" keySplines="0.5 0 0 1" keyTimes="0; 1" from="M10 8V2C8 2 5 2 4 2 3 2 0 2-2 2V8H0V4H3V8H5V4H8V8Z" to="M10 9V7C10 4 8 2 5 2 2 2 0 4 0 7V9H2V8H4V9H6V8H8V9Z"/>
+<animate attributeName="d" dur="1.5s" begin="shorten.begin" fill="freeze" calcMode="spline" keySplines="0.5 0 0 1" keyTimes="0; 1" from="M10 9V7C10 4 8 2 5 2 2 2 0 4 0 7V9H2V8H4V9H6V8H8V9Z" to="M10 8V2C8 2 5 2 4 2 3 2 0 2-2 2V8H0V4H3V8H5V4H8V8Z"/>
+</path>
+<path id="fige2" fill="#000" d="M0 7V11C0 14 2 16 5 16 8 16 10 14 10 11L7 11C7 12 6.5 13 5 13 3.5 13 3 12 3 11V9.5H10V7Z">
+<animate attributeName="d" dur="1.5s" begin="expand.begin" fill="freeze" calcMode="spline" keySplines="0.5 0 0 1" keyTimes="0; 1" from="M-2 8V10C-2 11-2 13-2 14 4 14 6 14 10 14L10 10C8 10 4 10 2 10 1 10 1 10 0 10V10H10V8Z" to="M0 7V11C0 14 2 16 5 16 8 16 10 14 10 11L7 11C7 12 6.5 13 5 13 3.5 13 3 12 3 11V9.5H10V7Z"/>
+<animate attributeName="d" dur="1.5s" begin="shorten.begin" fill="freeze" calcMode="spline" keySplines="0.5 0 0 1" keyTimes="0; 1" from="M0 7V11C0 14 2 16 5 16 8 16 10 14 10 11L7 11C7 12 6.5 13 5 13 3.5 13 3 12 3 11V9.5H10V7Z" to="M-2 8V10C-2 11-2 13-2 14 4 14 6 14 10 14L10 10C8 10 4 10 2 10 1 10 1 10 0 10V10H10V8Z"/>
+</path>
+<path id="LongLogoEE" fill="#000" d="M7 7V5H6V7ZM2 7V5H1V7Z"/>
+<path id="LongLogoK1" fill="#000" d="M12 0V16H15V9.5H16.5L20 16H23L19 8 23 0H20L16.5 6.5H15V0Z"/>
+<path id="LongLogoU1" fill="#000" d="M24 0V11A5 5 0 0034 11V0H31V11A2 2 0 0127 11V0Z"/>
+<path id="LongLogoN1" fill="#000" d="M36 16V5A5 5 90 0146 5V16H43V5A2 2 90 0039 5V16Z"/>
+<path id="LongLogoA1" fill="#000" d="M48 16V5A5 5 90 0158 5V16H55V5A2 2 90 0051 5V7H55V10H51V16Z"/>
+<path id="LongLogoZ1" fill="#000" d="M60 0H70V3L63.5 13H70V16H60V13L66.5 3H60Z"/>
+<path id="LongLogoA2" fill="#000" d="M72 16V5A5 5 0 0182 5V16H79V5A2 2 0 0075 5V7H79V10H75V16Z"/>
+<path id="LongLogoN2" fill="#000" d="M84 16V5A5 5 90 0194 5V16H91V5A2 2 90 0087 5V16Z"/>
+<path id="LongLogoU2" fill="#000" d="M96 0V11A5 5 90 00106 11V0H103V11A2 2 90 0199 11V0Z"/>
+<path id="LongLogoGrid" stroke="#999" stroke-width="0.1" d="M-64 2H-4M-64 4H-4M-64 6H-4M-64 8H-4M-64 10H-4M-64 12H-4M-64 14H-4 M-62 -4V16M-60 -4V16M-58 -4V16M-56 -4V16M-54 -4V16M-52 -4V16M-50 -4V16M-48 -4V16M-46 -4V16M-44 -4V16M-42 -4V16M-40 -4V16M-38 -4V16M-36 -4V16M-34 -4V16M-32 -4V16M-30 -4V16M-28 -4V16M-26 -4V16M-24 -4V16M-22 -4V16M-20 -4V16M-18 -4V16M-16 -4V16M-14 -4V16M-12 -4V16M-10 -4V16M-8 -4V16M-6 -4V16" />
+<path id="LongLogoRect" fill="#da8" d="M-64 2H-54V6H-64Z" />
+<path id="LongLogoTrig" fill="#687" d="M-52 2L-44 10L-44 2Z" />
+<path id="LongLogoCirc" fill="#9ac" d="M-54 7A1 1 0 00-54 21 1 1 0 00-54 7Z" />
+<path id="LongLogoEllp" fill="#bb7" d="M-42 5A1 1 0 00-39 5 1 1 0 00-42 5" />
+<path id="LongLogoTrap" fill="#faa" d="M-40 14-35 2H-25L-30 14Z" />
+<path id="LongLogoWect" fill="#7cd" d="M-13 4H-20Q-24 4-24 8V8Q-24 12-20 12H-14Q-10 12-10 8-10 4-14 4Z" />
+</svg>
