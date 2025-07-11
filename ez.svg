@@ -1,7 +1,7 @@
 <svg id="AnimLogo" viewBox="-100 -4 114 24" height="480" xmlns="http://www.w3.org/2000/svg">
 <path id="LongLogoBG" fill="#fff" d="M-100 -4 V20 H110 V-4Z"/>
 <animate id="shorten" dur="1.5s" begin="expand.end+8s" fill="freeze"/>
-<animate id="expand" dur="1.5s" begin="8s; shorten.end+8s" fill="freeze"/>
+<animate id="expand" dur="1.5s" begin="2s; shorten.end+8s" fill="freeze"/>
 <animate attributeName="viewBox" dur="1.5s" begin="expand.begin" fill="freeze" calcMode="spline" keySplines="0.5 0 0 1" keyTimes="0; 1" from="-100 -4 114 24" to="-4 -4 114 24"/>
 <animate attributeName="viewBox" dur="1.5s" begin="shorten.begin" fill="freeze" calcMode="spline" keySplines="0.5 0 0 1" keyTimes="0; 1" from="-4 -4 114 24" to="-100 -4 114 24"/>
 <path id="fige1" fill="#000" d="M10 8V2C8 2 5 2 4 2 3 2 0 2-2 2V8H0V4H3V8H5V4H8V8Z">
@@ -25,13 +25,13 @@
 <path id="LongLogoRect" fill="#7cd" d="M-100 0H-90V6H-100Z" />
 <path id="LongLogoTrig" fill="#687" d="M-88-2L-76 19L-76-2Z" />
 <path id="LongLogoCirc" fill="#9ac" d="M-94 10A2 2 90 00-94 38 2 2 90 00-94 10Z" />
-<path id="LongLogoDots" fill="#000" d="M-70 -2V0H-68V-2ZM-66 -2V0H-64V-2ZM-62 -2V0H-60V-2Z" />
-<path id="LongLogoInes" fill="#aaa" d="M-70 2V10H-68V2ZM-66 2V10H-64V2ZM-62 2V10H-60V2Z" />
+<path id="LongLogoIyes" fill="#bad" d="M-70.5-2V1H-67.5V-2ZM-66.5-2V1H-63.5V-2ZM-62.5-2V1H-59.5V-2Z" />
+<path id="LongLogoInes" fill="#bad" d="M-70.5 2V10H-67.6V2ZM-66.5 2V10H-63.5V2ZM-62.5 2V10H-59.5V2Z" />
 <path id="LongLogoTabl" fill="#dca" d="M-74 12V18H-32V12Z" />
 <path id="LongLogoPlan" fill="#986" d="M-72 14V16H-34V14Z" />
 <path id="LongLogoPalm" fill="#bb7" d="M-11 17A1 1 0 00-8 17 1 1 0 00-11 17" />
 <path id="LongLogoHand" fill="#caa" d="M-30 20-25 8H-22L-27 20Z" />
 <path id="LongLogoTrap" fill="#faa" d="M-25 20-20 8H-10L-15 20Z" />
 <path id="LongLogoHead" fill="#da8" d="M-11-2H-16Q-20-2-20 2V2Q-20 6-16 6H-12Q-8 6-8 2-8-2-12-2Z" />
-<path id="LongLogoSign" stroke="#000" stroke-width="0.5" stroke-linecap="round" fill="none" d="M-55 9C-57 5-54 1-52 3S-58 13-48 7-48 0-46 3-35 8-43 9-42 2-39 3-36 18-25 0" />
+<path id="LongLogoSign" stroke="#000" stroke-width="0.5" stroke-linecap="round" fill="none" d="M-55 9C-52 11-48 6-52 3S-56 8-46 9-40-2-44 1-36 18-25 0" />
 </svg>
