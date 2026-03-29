@@ -1,12 +1,14 @@
 package main
 
 import (
-	"fmt"
+//    "fmt"
     "image"
     "image/color"
     "image/png"
     "os"
     "sync"
+    "math/rand"
+    "time"
 )
 
 const maxIter = 1000
@@ -36,6 +38,73 @@ func burningship(c complex128, z complex128) int {
     return maxIter
 }
 
+func buddhabrot(width, height int, samples int) image.Image {
+    img := image.NewRGBA(image.Rect(0, 0, width, height))
+    counts := make([][]int, height)
+    for i := range counts {
+        counts[i] = make([]int, width)
+    }
+
+    rand.Seed(time.Now().UnixNano())
+
+    scale := 320.0
+    offsetX := float64(width) / 2
+    offsetY := float64(height) / 2
+
+    for s := 0; s < samples; s++ {
+        // Random point in complex plane
+        cr := rand.Float64()*3.5 - 2.5
+        ci := rand.Float64()*3.0 - 1.5
+        c := complex(cr, ci)
+
+        var orbit []complex128
+        z := complex(0, 0)
+
+        escaped := false
+        for i := 0; i < maxIter; i++ {
+            z = z*z + c
+            orbit = append(orbit, z)
+            if real(z)*real(z)+imag(z)*imag(z) > 4 {
+                escaped = true
+                break
+            }
+        }
+
+        if !escaped {
+            continue
+        }
+
+        // Plot orbit
+        for _, z := range orbit {
+            x := int(real(z)*scale + offsetX)
+            y := int(imag(z)*scale + offsetY)
+            if x >= 0 && x < width && y >= 0 && y < height {
+                counts[y][x]++
+            }
+        }
+    }
+
+    // Normalize and color
+    maxCount := 0
+    for y := range counts {
+        for x := range counts[y] {
+            if counts[y][x] > maxCount {
+                maxCount = counts[y][x]
+            }
+        }
+    }
+
+    for y := 0; y < height; y++ {
+        for x := 0; x < width; x++ {
+            c := counts[y][x]
+            val := uint8(255 * float64(c) / float64(maxCount))
+            img.Set(x, y, color.RGBA{val, val, val, 255})
+        }
+    }
+
+    return img
+}
+
 func generateFractal(width, height int, z complex128) image.Image {
     img := image.NewRGBA(image.Rect(0, 0, width, height))
     var wg sync.WaitGroup
@@ -61,8 +130,7 @@ func saveImage(img image.Image, filename string) {
 }
 
 func main() {
-    for param := float64(-1.5); param < 3.5; param += 0.02 {
-        filename := fmt.Sprintf("mandelbrot-d%.2f.png", param + 1.5)
-        saveImage(generateFractal(1280, 1280, complex(0, param)), filename)
-	}
+    img := buddhabrot(1280, 1280, 5000000)
+    saveImage(img, "buddhabrot.png")
+    // saveImage(generateFractal(1280, 1280, complex(0, 0)), "mandelbrot.png")
 }
